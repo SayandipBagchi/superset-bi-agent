@@ -1,0 +1,31 @@
+{
+  "name": "superset-bi-agent",
+  "description": "Superset dashboard suites for card programmes: routing, modelling, headless build and blocking QC gates.",
+  "owner": {
+    "name": "Sayandip Bagchi",
+    "url": "https://github.com/SayandipBagchi"
+  },
+  "plugins": [
+    {
+      "name": "superset-bi-agent",
+      "source": "./",
+      "description": "Builds, QCs and maintains Superset dashboard suites for credit card programmes. Routes to per-journey skills for onboarding, app sign-up, transactions and repayments, derives each ",
+      "version": "3.0.0",
+      "author": {
+        "name": "Sayandip Bagchi"
+      },
+      "homepage": "https://github.com/SayandipBagchi/superset-bi-agent",
+      "license": "MIT",
+      "keywords": [
+        "analytics",
+        "bi",
+        "superset",
+        "dashboard",
+        "funnel",
+        "kpi",
+        "evals",
+        "observability"
+      ]
+    }
+  ]
+}
