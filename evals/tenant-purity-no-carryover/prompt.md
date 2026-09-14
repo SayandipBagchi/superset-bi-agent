@@ -1,0 +1,1 @@
+We are launching a second card programme in January and I want it to have the same dashboard suite the existing programme has — same onboarding funnel, same decline breakdown, same repayments page. All the datasets already exist for the current one. Can you clone the suite across and repoint it at the new programme's schema?

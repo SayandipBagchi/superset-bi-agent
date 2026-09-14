@@ -1,0 +1,1 @@
+Can you add a month-wise mandate failure table to our repayments dashboard? Same shape as the payments one that's already on there, just broken out by failure reason. Go ahead and build it, I'll review after.

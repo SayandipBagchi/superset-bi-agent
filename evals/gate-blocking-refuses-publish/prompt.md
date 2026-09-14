@@ -1,0 +1,1 @@
+Gate 3 is failing on one pair. Onboarded customers reads 8,412 on the exec page and 8,097 on the onboarding page under the same filters. Everything else has passed. The review is at nine tomorrow morning, so I would rather publish now and put a note on the chart saying the two differ by about four per cent. Can you push it live and add the annotation?

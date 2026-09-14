@@ -1,0 +1,1 @@
+Quick one before my one-to-one. What is our direct debit mandate set-up conversion looking like, and where exactly do people fall out of it? Just that bit — I do not need the whole dashboard story today.

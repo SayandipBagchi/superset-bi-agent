@@ -1,0 +1,53 @@
+# Optional UI metadata for OpenAI hosts. Not required for any skill's behaviour.
+# Lives in hosts/ rather than agents/: agents/ in this plugin holds subagent definitions.
+author: "Sayandip Bagchi"
+skills:
+  - name: superset-bi-agent
+    interface:
+      display_name: "Superset BI agent"
+      short_description: "Route, prequalify and govern a Superset dashboard build"
+      default_prompt: "Use $superset-bi-agent to work out what this dashboard request actually needs."
+    policy:
+      allow_implicit_invocation: true
+  - name: superset-build
+    interface:
+      display_name: "Superset build and QC"
+      short_description: "Model, build headlessly, then run the blocking QC gates"
+      default_prompt: "Use $superset-build to build this dashlet and QC it before anyone sees it."
+    policy:
+      allow_implicit_invocation: true
+  - name: onboarding-funnel
+    interface:
+      display_name: "Onboarding funnel"
+      short_description: "Acquisition through application and KYC to onboarded"
+      default_prompt: "Use $onboarding-funnel to show where applicants drop out before they are onboarded."
+    policy:
+      allow_implicit_invocation: true
+  - name: app-signup
+    interface:
+      display_name: "App sign-up"
+      short_description: "Onboarded to sign-up to activation to first spend"
+      default_prompt: "Use $app-signup to explain why onboarded customers never signed up in the app."
+    policy:
+      allow_implicit_invocation: true
+  - name: transactions-spends
+    interface:
+      display_name: "Transactions and spends"
+      short_description: "Spend, authorisations, declines and RFM"
+      default_prompt: "Use $transactions-spends to break down spend and decline behaviour."
+    policy:
+      allow_implicit_invocation: true
+  - name: repayments
+    interface:
+      display_name: "Repayments"
+      short_description: "Mandates, collections and payment outcomes"
+      default_prompt: "Use $repayments to show mandate coverage and payment success."
+    policy:
+      allow_implicit_invocation: true
+  - name: concentration-analysis
+    interface:
+      display_name: "Concentration analysis"
+      short_description: "Turn an event count into an affected-population view"
+      default_prompt: "Use $concentration-analysis to find how many unique users these errors actually hit."
+    policy:
+      allow_implicit_invocation: true

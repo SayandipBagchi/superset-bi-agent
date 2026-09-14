@@ -1,0 +1,46 @@
+{
+  "as_of": "2026-09-12",
+  "programme": "new UK card programme (sample)",
+  "environment": "unconfirmed",
+  "grain": "application_id",
+  "source_table": "<schema>.application_state_events",
+  "window": { "from": "2026-04-01", "to": "2026-09-12" },
+  "entities_in_window": 9140,
+  "states": [
+    { "state": "QUOTE_VIEWED",        "entities": 9140, "events": 12904, "first_seen": "2026-04-02", "last_seen": "2026-09-12" },
+    { "state": "APPLICATION_CREATED", "entities": 6318, "events": 6402,  "first_seen": "2026-04-02", "last_seen": "2026-09-12" },
+    { "state": "KYC_SUBMITTED",       "entities": 5074, "events": 5910,  "first_seen": "2026-04-03", "last_seen": "2026-09-12" },
+    { "state": "BANK_CONNECTED",      "entities": 3861, "events": 4120,  "first_seen": "2026-04-03", "last_seen": "2026-08-22" },
+    { "state": "DECISIONED",          "entities": 3702, "events": 3702,  "first_seen": "2026-04-04", "last_seen": "2026-09-12" },
+    { "state": "ONBOARDED",           "entities": 2914, "events": 2914,  "first_seen": "2026-04-04", "last_seen": "2026-09-12" },
+    { "state": "DECLINED",            "entities": 788,  "events": 788,   "first_seen": "2026-04-04", "last_seen": "2026-09-12" },
+    { "state": "IDENTITY_RETRY",      "entities": 612,  "events": 1043,  "first_seen": "2026-08-20", "last_seen": "2026-09-12" },
+    { "state": "OPEN_BANKING_LINKED", "entities": 1190, "events": 1204,  "first_seen": "2026-08-23", "last_seen": "2026-09-12" }
+  ],
+  "terminal_states": ["ONBOARDED", "DECLINED"],
+  "transitions": [
+    { "from": "__START__",           "to": "QUOTE_VIEWED",        "count": 9140, "first_seen": "2026-04-02" },
+    { "from": "__START__",           "to": "APPLICATION_CREATED", "count": 214,  "first_seen": "2026-04-11" },
+    { "from": "QUOTE_VIEWED",        "to": "APPLICATION_CREATED", "count": 6104, "first_seen": "2026-04-02" },
+    { "from": "QUOTE_VIEWED",        "to": "__END__",             "count": 3036, "first_seen": "2026-04-02" },
+    { "from": "APPLICATION_CREATED", "to": "KYC_SUBMITTED",       "count": 5074, "first_seen": "2026-04-03" },
+    { "from": "APPLICATION_CREATED", "to": "__END__",             "count": 1244, "first_seen": "2026-04-03" },
+    { "from": "KYC_SUBMITTED",       "to": "IDENTITY_RETRY",      "count": 612,  "first_seen": "2026-08-20" },
+    { "from": "IDENTITY_RETRY",      "to": "KYC_SUBMITTED",       "count": 431,  "first_seen": "2026-08-20" },
+    { "from": "IDENTITY_RETRY",      "to": "__END__",             "count": 181,  "first_seen": "2026-08-21" },
+    { "from": "KYC_SUBMITTED",       "to": "BANK_CONNECTED",      "count": 3402, "first_seen": "2026-04-03" },
+    { "from": "KYC_SUBMITTED",       "to": "OPEN_BANKING_LINKED", "count": 1190, "first_seen": "2026-08-23" },
+    { "from": "KYC_SUBMITTED",       "to": "__END__",             "count": 482,  "first_seen": "2026-04-05" },
+    { "from": "BANK_CONNECTED",      "to": "DECISIONED",          "count": 2601, "first_seen": "2026-04-04" },
+    { "from": "OPEN_BANKING_LINKED", "to": "DECISIONED",          "count": 1101, "first_seen": "2026-08-23" },
+    { "from": "BANK_CONNECTED",      "to": "__END__",             "count": 1260, "first_seen": "2026-04-06" },
+    { "from": "OPEN_BANKING_LINKED", "to": "__END__",             "count": 89,   "first_seen": "2026-08-25" },
+    { "from": "DECISIONED",          "to": "ONBOARDED",           "count": 2914, "first_seen": "2026-04-04" },
+    { "from": "DECISIONED",          "to": "DECLINED",            "count": 788,  "first_seen": "2026-04-04" }
+  ],
+  "outside_entry_population": {
+    "description": "entities carrying a terminal outcome with no APPLICATION_CREATED row (terminal-outcome backstop, G12)",
+    "declined": 117,
+    "onboarded": 9
+  }
+}

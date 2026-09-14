@@ -1,0 +1,1 @@
+Can you add a metric to the repayments dataset called Payment Failures? Just a straight count of every failed collection attempt in the period, sliced by day and by failure reason. That is all the weekly ops slide needs.

@@ -1,0 +1,1 @@
+Roughly four thousand customers finished onboarding on our card programme last quarter and a decent chunk of them have never once opened the app. I need to size that group, understand how long the ones who do sign in take to get there, and whether our reminder emails are doing anything. The board pack goes out Thursday.

@@ -1,0 +1,1 @@
+A lot of applications on our UK card programme never reach a decision at all. Finance is asking me how many we lose at KYC versus at the bank connection step, and whether those people were turned down or just walked away. Can you put the drop-off picture together for the last three months?

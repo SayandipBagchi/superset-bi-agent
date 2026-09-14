@@ -1,0 +1,1 @@
+Our onboarding funnel is keyed entirely on the origination system's application records — every step on the page comes off that one table. It is showing that 92% of applicants reach a decision and the team is calling the journey healthy. Anything you would want checked before I take that to the steering group on Monday?

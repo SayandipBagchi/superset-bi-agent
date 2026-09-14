@@ -1,0 +1,1 @@
+The "bank connection completed" chart on our onboarding dashboard has been sitting flat at zero for three weeks now. Nobody has touched the dashboard, and every other chart on the page looks normal. Is that step genuinely dead, or is something else going on?

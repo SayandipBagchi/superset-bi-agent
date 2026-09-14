@@ -1,0 +1,28 @@
+{
+  "name": "superset-bi-agent",
+  "version": "3.0.0",
+  "description": "Builds, QCs and maintains Superset dashboard suites for credit card programmes. Routes to per-journey skills for onboarding, app sign-up, transactions and repayments, derives each engagement's stage ladder from live data instead of assuming it, triangulates every number behind blocking QC gates, and keeps tenant state, observability, context budget and the improvement ratchet as first-class concerns.",
+  "author": {
+    "name": "Sayandip Bagchi"
+  },
+  "license": "MIT",
+  "keywords": [
+    "analytics",
+    "bi",
+    "superset",
+    "dashboard",
+    "funnel",
+    "kpi",
+    "rca",
+    "onboarding",
+    "repayments",
+    "concentration",
+    "pareto",
+    "unique-users",
+    "declines",
+    "evals",
+    "observability",
+    "drift",
+    "context-engineering"
+  ]
+}

@@ -1,0 +1,1 @@
+Our switch logs show 61,400 declined transactions last month on the card programme, and that number is about to go into the exec deck under the heading "customers hit by declines". Before I sign it off, does it actually stand up? I have pulled a sample of the raw events into `decline-events.sample.json` if that helps.
